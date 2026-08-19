@@ -16,7 +16,7 @@ A public web page with six sections:
 | Home |I am a student at UniEspinal, currently in my fourth semester of the professional technical program in web programming. My contact details are as follows: my email is quintanajulian29@gmail.com.|
 | About |I am a hardworking young athlete with big dreams , I improve and learn with each passing day to become a strong person , Little by little, I am building the life I want |
 | Skills | Programming is one of the things I’m good at; I focus on learning new things related to my profession. |
-| Resume | Your education and your experience |
+| Resume | High school graduate with programming experience and a corresponding certificate |
 | Projects | The projects you have built |
 | Contact | How people can reach you |
 
