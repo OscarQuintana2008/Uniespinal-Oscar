@@ -13,8 +13,8 @@ A public web page with six sections:
 
 | Section | What goes there |
 |---|---|
-| Home |
-I am a UniEspinal student enrolled in the Systems Engineering program, currently in the fourth semester of the professional technical course in web programming. My contact details are as follows: my email is quintanajulian29@gmail.com. |
+| Home |I am a UniEspinal student enrolled in the Systems Engineering program, currently in the fourth semester of the professional technical course in web programming. My contact details are as follows: my
+email is quintanajulian29@gmail.com |
 | About | Two or three sentences about you |
 | Skills | Your technical and professional skills |
 | Resume | Your education and your experience |
