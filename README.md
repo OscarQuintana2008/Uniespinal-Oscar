@@ -18,7 +18,7 @@ A public web page with six sections:
 | Skills | Programming is one of the things I’m good at; I focus on learning new things related to my profession. |
 | Resume | High school graduate with programming experience and a corresponding certificate |
 | Projects | None for the moment |
-| Contact | You can contact me on my mobile at 3003650246. |
+| Contact | You can contact me on my email quintanajulian29@gmail.com. |
 
 ---
 
