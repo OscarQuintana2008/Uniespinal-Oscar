@@ -17,8 +17,8 @@ A public web page with six sections:
 | About |I am a hardworking young athlete with big dreams , I improve and learn with each passing day to become a strong person , Little by little, I am building the life I want |
 | Skills | Programming is one of the things I’m good at; I focus on learning new things related to my profession. |
 | Resume | High school graduate with programming experience and a corresponding certificate |
-| Projects | The projects you have built |
-| Contact | How people can reach you |
+| Projects | None for the moment |
+| Contact | You can contact me on my mobile at 3003650246. |
 
 ---
 
