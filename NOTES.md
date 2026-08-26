@@ -1,8 +1,8 @@
 # Translation Notes
 
-**Student:** [Your name]
-**Course:** [Inglés I / Inglés II]
-**Date:** [dd/mm/yyyy]
+**Student:** Oscar Julian Quintana Ramirez
+**Course:** Inglés II
+**Date:** 28/07/2008
 
 ---
 
