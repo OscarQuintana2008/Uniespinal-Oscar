@@ -33,7 +33,7 @@ const ES = {
   "about.valueLocation":  "Girardot, Colombia",
   "about.labelEmail":     "Correo",
   "about.labelLanguages": "Idiomas",
-  "about.valueLanguages": "Español (nativo) · Inglés ([tu nivel])",
+  "about.valueLanguages": "Español (nativo) · Inglés (Intermedio)",
   "about.labelStatus":    "Disponibilidad",
   "about.valueStatus":    "Abierto a prácticas",
   "about.interestsTitle": "Intereses",
