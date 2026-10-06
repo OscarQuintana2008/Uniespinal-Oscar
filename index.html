@@ -13,12 +13,6 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-    .skill p {
-      color: var(--color-texto-suave);
-      font-size: 15px;
-      line-height: 1.6;
-    }
-
     .proyecto-texto {
       padding: 26px;
       border: 1px solid var(--color-acento);
@@ -209,62 +203,89 @@
       <h2 data-i18n="skills.title">Habilidades</h2>
 
       <div class="fila">
+
+        <!-- HABILIDADES TÉCNICAS -->
         <div class="col">
           <h3 data-i18n="skills.technical">Habilidades técnicas</h3>
 
           <div class="skill">
             <span class="skill-nombre">HTML &amp; CSS</span>
-            <p data-i18n="skill.html.text">
-              Estoy aprendiendo a editar el contenido y los estilos de páginas sencillas.
-            </p>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="20">
+                <span>20%</span>
+              </div>
+            </div>
           </div>
 
           <div class="skill">
             <span class="skill-nombre">JavaScript</span>
-            <p data-i18n="skill.js.text">
-              Estoy aprendiendo a entender y modificar ejemplos con ayuda.
-            </p>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="30">
+                <span>30%</span>
+              </div>
+            </div>
           </div>
 
           <div class="skill">
-            <span class="skill-nombre">Python</span>
-            <p data-i18n="skill.python.text">
-              Estoy aprendiendo Python para trabajar en EduAlert.
-            </p>
+            <span class="skill-nombre" data-i18n="skill.web">Programación Web</span>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="45">
+                <span>45%</span>
+              </div>
+            </div>
           </div>
 
           <div class="skill">
-            <span class="skill-nombre">GitHub</span>
-            <p data-i18n="skill.github.text">
-              Estoy aprendiendo a guardar cambios y a publicar una página.
-            </p>
+            <span class="skill-nombre">Git &amp; GitHub</span>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="20">
+                <span>20%</span>
+              </div>
+            </div>
           </div>
         </div>
 
+        <!-- HABILIDADES PROFESIONALES -->
         <div class="col">
           <h3 data-i18n="skills.professional">Habilidades profesionales</h3>
 
           <div class="skill">
-            <span class="skill-nombre" data-i18n="skill.learning">Interés por aprender</span>
-            <p data-i18n="skill.learning.text">
-              Me gusta practicar programación y mejorar paso a paso.
-            </p>
+            <span class="skill-nombre" data-i18n="skill.support">Soporte al usuario</span>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="50">
+                <span>50%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <span class="skill-nombre" data-i18n="skill.teamwork">Trabajo en equipo</span>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="70">
+                <span>70%</span>
+              </div>
+            </div>
           </div>
 
           <div class="skill">
             <span class="skill-nombre" data-i18n="skill.problem">Resolución de problemas</span>
-            <p data-i18n="skill.problem.text">
-              Estoy aprendiendo a revisar errores y buscar soluciones.
-            </p>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="80">
+                <span>80%</span>
+              </div>
+            </div>
           </div>
 
           <div class="skill">
             <span class="skill-nombre" data-i18n="skill.english">Inglés técnico</span>
-            <p data-i18n="skill.english.text">
-              Estoy aprendiendo vocabulario y frases para describir mi proyecto.
-            </p>
+            <div class="barra-skill">
+              <div class="progreso" data-percent="70">
+                <span>70%</span>
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -276,7 +297,7 @@
 
       <div class="fila">
 
-        <!-- DOS CUADROS DE FORMACIÓN -->
+        <!-- FORMACIÓN: DOS CUADROS -->
         <div class="col izquierda">
           <h3 data-i18n="resume.education">Formación</h3>
 
@@ -311,7 +332,7 @@
           </div>
         </div>
 
-        <!-- DOS CUADROS DE EXPERIENCIA -->
+        <!-- EXPERIENCIA: DOS CUADROS -->
         <div class="col derecha">
           <h3 data-i18n="resume.experience">Experiencia</h3>
 
