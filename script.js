@@ -1,174 +1,221 @@
 /* ============================================================
-   WEB PROFILE TEMPLATE - SCRIPT
-   UniEspinal · Técnico Profesional en Programación Web
-
-   THIS IS THE FILE YOU WILL WORK ON THE MOST.
-
-   Below there are two dictionaries: ES and EN.
-   They have exactly the same keys, but different texts.
-
-   IMPORTANT: the English version is NOT a translation of the
-   Spanish version. A professional profile in English follows
-   different rules. Read NOTES.md before you write it.
+   PERFIL WEB DE OSCAR JULIÁN QUINTANA RAMÍREZ
+   Textos en español e inglés
    ============================================================ */
 
+/* ==================== ESPAÑOL ==================== */
 
-/* ------------------------------------------------------------
-   1. SPANISH TEXTS
-   ------------------------------------------------------------ */
 const ES = {
-  "nav.home":      "INICIO",
-  "nav.about":     "SOBRE MÍ",
-  "nav.skills":    "HABILIDADES",
-  "nav.resume":    "FORMACIÓN",
+  "nav.home": "INICIO",
+  "nav.about": "SOBRE MÍ",
+  "nav.skills": "HABILIDADES",
+  "nav.resume": "FORMACIÓN",
   "nav.portfolio": "PROYECTOS",
-  "nav.contact":   "CONTACTO",
+  "nav.contact": "CONTACTO",
 
-  "hero.role": "Desarrollador Web · Soporte Técnico",
+  "hero.role": "Estudiante de programación web",
 
-  "about.title":          "Sobre Mí",
-  "about.text":           "[Escribe aquí dos o tres frases sobre ti: qué estudias, qué te interesa dentro del desarrollo web y qué estás buscando ahora.]",
-  "about.infoTitle":      "Información",
-  "about.labelLocation":  "Ubicación",
-  "about.valueLocation":  "Girardot, Colombia",
-  "about.labelEmail":     "Correo",
+  "about.title": "Sobre Mí",
+  "about.text": "Soy estudiante de programación web en UniEspinal. Me gusta jugar voleibol e ir al gimnasio. También disfruto aprender sobre programación y trabajar en proyectos web.",
+  "about.infoTitle": "Información",
+  "about.labelLocation": "Ubicación",
+  "about.valueLocation": "Girardot, Colombia",
+  "about.labelEmail": "Correo",
   "about.labelLanguages": "Idiomas",
-  "about.valueLanguages": "Español (nativo) · Inglés (Intermedio)",
-  "about.labelStatus":    "Disponibilidad",
-  "about.valueStatus":    "Abierto a prácticas",
+  "about.valueLanguages": "Español (nativo) · Inglés en aprendizaje",
+  "about.labelStatus": "Disponibilidad",
+  "about.valueStatus": "Abierto a prácticas",
   "about.interestsTitle": "Intereses",
 
   "interest.1": "CÓDIGO",
-  "interest.2": "SOPORTE",
-  "interest.3": "LECTURA",
-  "interest.4": "JUEGOS",
+  "interest.2": "VÓLEY",
+  "interest.3": "GIMNASIO",
+  "interest.4": "APRENDER",
 
-  "skills.title":        "Habilidades",
-  "skills.technical":    "Habilidades técnicas",
+  "skills.title": "Habilidades",
+  "skills.technical": "Habilidades técnicas",
   "skills.professional": "Habilidades profesionales",
-  "skill.support":       "Soporte al usuario",
-  "skill.teamwork":      "Trabajo en equipo",
-  "skill.problem":       "Resolución de problemas",
-  "skill.english":       "Inglés técnico",
 
-  "resume.title":      "Formación y experiencia",
-  "resume.education":  "Formación",
+  "skill.html.text": "Estoy aprendiendo a editar el contenido y los estilos de páginas sencillas.",
+  "skill.js.text": "Estoy aprendiendo a entender y modificar ejemplos con ayuda.",
+  "skill.python.text": "Estoy aprendiendo Python para trabajar en EduAlert.",
+  "skill.github.text": "Estoy aprendiendo a guardar cambios y a publicar una página.",
+
+  "skill.learning": "Interés por aprender",
+  "skill.learning.text": "Me gusta practicar programación y mejorar paso a paso.",
+  "skill.problem": "Resolución de problemas",
+  "skill.problem.text": "Estoy aprendiendo a revisar errores y buscar soluciones.",
+  "skill.english": "Inglés técnico",
+  "skill.english.text": "Estoy aprendiendo vocabulario y frases para describir mi proyecto.",
+
+  // Compatibilidad con las etiquetas de la plantilla anterior.
+  "skill.support": "Interés por aprender",
+  "skill.teamwork": "Práctica de programación",
+
+  "resume.title": "Formación y experiencia",
+  "resume.education": "Formación",
   "resume.experience": "Experiencia",
 
+  // Primer cuadro de Formación.
   "edu.1.title": "Técnico Profesional en Programación Web",
-  "edu.1.text":   "Actualmente estudio Programación Web en UniEspinal. He practicado desarrollo web con HTML y PHP, y he utilizado Laravel para organizar rutas, controladores y vistas.",
-  "edu.2.title": "Formación en Inglés",
-  "edu.2.text":  "Actualmente curso Inglés II. Estoy aprendiendo vocabulario técnico para describir mi formación, mis habilidades y mis proyectos.",
+  "edu.1.date": "2025 - 2027",
+  "edu.1.text": "Estoy estudiando Programación Web en UniEspinal y estoy aprendiendo a organizar y personalizar páginas web.",
 
-  "exp.1.title":  "Programación Web",
-  "exp.1.text":   "He trabajado en una práctica de Laravel que muestra un saludo y una lista de libros. He utilizado rutas, un controlador y vistas Blade con PHP y HTML.",
+  // Segundo cuadro de Formación.
+  "edu.2.title": "Formación en Inglés",
+  "edu.2.organization": "Formación académica",
+  "edu.2.date": "Actualidad",
+  "edu.2.text": "Actualmente curso Inglés II. Estoy aprendiendo vocabulario técnico para describir mi formación, mis habilidades y mis proyectos.",
+
+  // Primer cuadro de Experiencia.
+  "exp.1.title": "Programación Web",
+  "exp.1.date": "Actualidad",
+  "exp.1.text": "He adaptado una plantilla académica para crear un perfil web personal bilingüe con HTML, CSS y JavaScript.",
+
+  // Segundo cuadro de Experiencia.
   "exp.2.title": "EduAlert: aplicación web con Python",
-  "exp.2.text":   "Estoy trabajando en EduAlert, una aplicación web con Python. Estoy aprendiendo a utilizar Python para este proyecto.",
+  "exp.2.organization": "Proyecto académico",
+  "exp.2.date": "Actualidad",
+  "exp.2.text": "Estoy trabajando en EduAlert, una aplicación web con Python. Estoy aprendiendo a utilizar Python para este proyecto.",
 
   "portfolio.title": "Proyectos",
-  "project.1.title": "[Nombre del proyecto]",
-  "project.1.text":  "[Tecnologías usadas]",
-  "project.2.title": "[Nombre del proyecto]",
-  "project.2.text":  "[Tecnologías usadas]",
-  "project.3.title": "[Nombre del proyecto]",
-  "project.3.text":  "[Tecnologías usadas]",
 
-  "contact.title":         "Contacto",
-  "contact.intro":         "[Una frase invitando a escribirte. Por ejemplo: ¿Tienes un proyecto o una vacante? Escríbeme.]",
-  "contact.emailLabel":    "Correo",
-  "contact.linkedinValue": "[Tu perfil profesional]",
+  "project.1.title": "EduAlert",
+  "project.1.text": "Proyecto de aplicación web con Python.",
+  "project.1.type": "Aplicación web",
 
-  "footer.note": "[Tu nombre] · Técnico Profesional en Programación Web · UniEspinal"
+  "project.2.title": "Perfil web personal",
+  "project.2.text": "Perfil académico en español e inglés, personalizado a partir de una plantilla. Incluye presentación, habilidades, formación y proyectos.",
+
+  // Estas claves se usan si conservas una tercera tarjeta.
+  "project.3.title": "Práctica académica: saludo y lista de libros",
+  "project.3.text": "PHP · Laravel · Blade · HTML",
+
+  "project.code": "Ver código en GitHub",
+
+  "contact.title": "Contacto",
+  "contact.intro": "Puedes escribirme por correo para conversar sobre programación y proyectos académicos.",
+  "contact.emailLabel": "Correo",
+  "contact.linkedinValue": "LinkedIn",
+
+  "footer.note": "Oscar Julián Quintana Ramírez · Estudiante de Programación Web · UniEspinal"
 };
 
+/* ==================== INGLÉS ==================== */
 
-/* ------------------------------------------------------------
-   2. ENGLISH TEXTS
-
-   Before writing this section, remember:
-   - Use action verbs: built, configured, fixed, tested, supported.
-   - Do not include age, marital status or a home address.
-   - Do not translate word by word. Rewrite.
-   ------------------------------------------------------------ */
 const EN = {
-  "nav.home":      "HOME",
-  "nav.about":     "ABOUT",
-  "nav.skills":    "SKILLS",
-  "nav.resume":    "RESUME",
+  "nav.home": "HOME",
+  "nav.about": "ABOUT",
+  "nav.skills": "SKILLS",
+  "nav.resume": "RESUME",
   "nav.portfolio": "PROJECTS",
-  "nav.contact":   "CONTACT",
+  "nav.contact": "CONTACT",
 
-  "hero.role": "Web Developer · Technical Support",
+  "hero.role": "Web Programming Student",
 
-  "about.title":          "About Me",
-  "about.text":           "[Write two or three sentences about yourself: what you study, what interests you in web development, and what you are looking for now.]",
-  "about.infoTitle":      "Information",
-  "about.labelLocation":  "Location",
-  "about.valueLocation":  "Girardot, Colombia",
-  "about.labelEmail":     "Email",
+  "about.title": "About Me",
+  "about.text": "I am a web programming student at UniEspinal. I enjoy playing volleyball and going to the gym. I also enjoy learning about programming and working on web projects.",
+  "about.infoTitle": "Information",
+  "about.labelLocation": "Location",
+  "about.valueLocation": "Girardot, Colombia",
+  "about.labelEmail": "Email",
   "about.labelLanguages": "Languages",
-  "about.valueLanguages": "Spanish (native) · English (Medium)",
-  "about.labelStatus":    "Availability",
-  "about.valueStatus":    "Open to internships",
+  "about.valueLanguages": "Spanish (native) · English (learning)",
+  "about.labelStatus": "Availability",
+  "about.valueStatus": "Open to internships",
   "about.interestsTitle": "Interests",
 
   "interest.1": "CODE",
-  "interest.2": "SUPPORT",
-  "interest.3": "READING",
-  "interest.4": "GAMING",
+  "interest.2": "VOLLEYBALL",
+  "interest.3": "GYM",
+  "interest.4": "LEARNING",
 
-  "skills.title":        "Skills",
-  "skills.technical":    "Technical skills",
+  "skills.title": "Skills",
+  "skills.technical": "Technical skills",
   "skills.professional": "Professional skills",
-  "skill.support":       "User support",
-  "skill.teamwork":      "Teamwork",
-  "skill.problem":       "Problem solving",
-  "skill.english":       "Technical English",
 
-  "resume.title":      "Education and experience",
-  "resume.education":  "Education",
+  "skill.html.text": "I am learning to edit the content and styles of simple web pages.",
+  "skill.js.text": "I am learning to understand and modify examples with help.",
+  "skill.python.text": "I am learning Python to work on EduAlert.",
+  "skill.github.text": "I am learning to save changes and publish a web page.",
+
+  "skill.learning": "Interest in learning",
+  "skill.learning.text": "I enjoy practicing programming and improving step by step.",
+  "skill.problem": "Problem solving",
+  "skill.problem.text": "I am learning to check errors and look for solutions.",
+  "skill.english": "Technical English",
+  "skill.english.text": "I am learning vocabulary and sentences to describe my project.",
+
+  // Compatibilidad con las etiquetas de la plantilla anterior.
+  "skill.support": "Interest in learning",
+  "skill.teamwork": "Programming practice",
+
+  "resume.title": "Education and experience",
+  "resume.education": "Education",
   "resume.experience": "Experience",
 
+  // Primer cuadro de Formación.
   "edu.1.title": "Professional Technician in Web Programming",
-  "edu.1.text":  "I am currently studying Web Programming at UniEspinal. I have practiced web development with HTML and PHP, and I have used Laravel to organize routes, controllers, and views.",
+  "edu.1.date": "2025 - 2027",
+  "edu.1.text": "I am studying Web Programming at UniEspinal, and I am learning to organize and personalize web pages.",
+
+  // Segundo cuadro de Formación.
   "edu.2.title": "English Studies",
-  "edu.2.text":  "[What you learned and how you use it.]",
+  "edu.2.organization": "Academic training",
+  "edu.2.date": "Present",
+  "edu.2.text": "I am taking English II. I am learning technical vocabulary to describe my education, skills, and projects.",
 
-  "exp.1.title": "Academic project: Greeting and Book List",
-  "exp.1.text":  "I have worked on a Laravel practice project that displays a greeting and a list of books. I have used routes, a controller, and Blade views with PHP and HTML.",
-  "exp.2.title": "[Role or type of project]",
-  "exp.2.text":  "I am taking English II. I am learning technical vocabulary to describe my education, skills, and projects.",
+  // Primer cuadro de Experiencia.
+  "exp.1.title": "Web Programming",
+  "exp.1.date": "Present",
+  "exp.1.text": "I have adapted an academic template to create a bilingual personal web profile with HTML, CSS, and JavaScript.",
+
+  // Segundo cuadro de Experiencia.
+  "exp.2.title": "EduAlert: Python Web Application",
+  "exp.2.organization": "Academic project",
+  "exp.2.date": "Present",
+  "exp.2.text": "I am working on EduAlert, a web application using Python. I am learning to use Python for this project.",
+
   "portfolio.title": "Projects",
-  "project.1.title": "[Project name]",
-  "project.1.text":  "[Technologies used]",
-  "project.2.title": "[Project name]",
-  "project.2.text":  "[Technologies used]",
-  "project.3.title": "[Project name]",
-  "project.3.text":  "[Technologies used]",
 
-  "contact.title":         "Contact",
-  "contact.intro":         "[One sentence inviting people to write to you. Example: Have a project or a vacancy? Send me a message.]",
-  "contact.emailLabel":    "Email",
-  "contact.linkedinValue": "[Your professional profile]",
+  "project.1.title": "EduAlert",
+  "project.1.text": "A web application project using Python.",
+  "project.1.type": "Web application",
 
-  "footer.note": "[Your name] · Professional Technician in Web Programming · UniEspinal"
+  "project.2.title": "Personal Web Profile",
+  "project.2.text": "An academic profile in Spanish and English, personalized from a template. It includes an introduction, skills, education, and projects.",
+
+  // Estas claves se usan si conservas una tercera tarjeta.
+  "project.3.title": "Academic practice: greeting and book list",
+  "project.3.text": "PHP · Laravel · Blade · HTML",
+
+  "project.code": "View source code on GitHub",
+
+  "contact.title": "Contact",
+  "contact.intro": "You can email me to talk about programming and academic projects.",
+  "contact.emailLabel": "Email",
+  "contact.linkedinValue": "LinkedIn",
+
+  "footer.note": "Oscar Julián Quintana Ramírez · Web Programming Student · UniEspinal"
 };
 
+/* ==================== CAMBIO DE IDIOMA ==================== */
 
-/* ============================================================
-   3. LANGUAGE SWITCHER
-   You do not need to change the code below.
-   ============================================================ */
+const DICCIONARIOS = {
+  es: ES,
+  en: EN
+};
 
-const DICCIONARIOS = { es: ES, en: EN };
 let idiomaActual = "es";
 
 function aplicarIdioma(idioma) {
   const textos = DICCIONARIOS[idioma];
+
   if (!textos) return;
 
   document.querySelectorAll("[data-i18n]").forEach(elemento => {
     const clave = elemento.getAttribute("data-i18n");
+
     if (textos[clave] !== undefined) {
       elemento.textContent = textos[clave];
     } else {
@@ -179,14 +226,23 @@ function aplicarIdioma(idioma) {
   document.documentElement.lang = idioma;
 
   const boton = document.getElementById("btn-idioma");
+
   if (boton) {
     const otro = idioma === "es" ? "en" : "es";
+
     boton.innerHTML =
-      '<span class="idioma-activo">'   + idioma.toUpperCase() + '</span>' +
+      '<span class="idioma-activo">' +
+      idioma.toUpperCase() +
+      "</span>" +
       '<span class="idioma-sep">/</span>' +
-      '<span class="idioma-inactivo">' + otro.toUpperCase()   + '</span>';
-    boton.setAttribute("aria-label",
-      idioma === "es" ? "Switch to English" : "Cambiar a español");
+      '<span class="idioma-inactivo">' +
+      otro.toUpperCase() +
+      "</span>";
+
+    boton.setAttribute(
+      "aria-label",
+      idioma === "es" ? "Switch to English" : "Cambiar a español"
+    );
   }
 
   idiomaActual = idioma;
@@ -196,41 +252,45 @@ function cambiarIdioma() {
   aplicarIdioma(idiomaActual === "es" ? "en" : "es");
 }
 
-
-/* ============================================================
-   4. RESPONSIVE MENU
-   ============================================================ */
+/* ==================== MENÚ PARA CELULAR ==================== */
 
 let menuVisible = false;
 
 function mostrarOcultarMenu() {
   const nav = document.getElementById("nav");
+
+  if (!nav) return;
+
   menuVisible = !menuVisible;
-  nav.className = menuVisible ? "responsive" : "";
+  nav.classList.toggle("responsive", menuVisible);
 }
 
 function cerrarMenu() {
-  document.getElementById("nav").className = "";
+  const nav = document.getElementById("nav");
+
+  if (nav) {
+    nav.classList.remove("responsive");
+  }
+
   menuVisible = false;
 }
 
-
-/* ============================================================
-   5. SKILL BARS
-
-   The width comes from the data-percent attribute in index.html.
-   You can add or remove skills freely: this code does not depend
-   on how many there are.
-   ============================================================ */
+/* ==================== BARRAS DE HABILIDADES ==================== */
+/* Se utiliza únicamente si el HTML todavía contiene barras. */
 
 function animarHabilidades() {
   const barras = document.querySelectorAll(".progreso");
 
   const mostrar = barra => {
     const porcentaje = barra.getAttribute("data-percent") || "0";
+
     barra.style.width = porcentaje + "%";
+
     const etiqueta = barra.querySelector("span");
-    if (etiqueta) etiqueta.textContent = porcentaje + "%";
+
+    if (etiqueta) {
+      etiqueta.textContent = porcentaje + "%";
+    }
   };
 
   if (!("IntersectionObserver" in window)) {
@@ -238,22 +298,26 @@ function animarHabilidades() {
     return;
   }
 
-  const observador = new IntersectionObserver((entradas, obs) => {
-    entradas.forEach(entrada => {
-      if (entrada.isIntersecting) {
-        mostrar(entrada.target);
-        obs.unobserve(entrada.target);
-      }
-    });
-  }, { threshold: 0.4 });
+  const observador = new IntersectionObserver(
+    (entradas, obs) => {
+      entradas.forEach(entrada => {
+        if (entrada.isIntersecting) {
+          mostrar(entrada.target);
+          obs.unobserve(entrada.target);
+        }
+      });
+    },
+    {
+      threshold: 0.4
+    }
+  );
 
-  barras.forEach(barra => observador.observe(barra));
+  barras.forEach(barra => {
+    observador.observe(barra);
+  });
 }
 
-
-/* ============================================================
-   6. START
-   ============================================================ */
+/* ==================== INICIO ==================== */
 
 document.addEventListener("DOMContentLoaded", () => {
   aplicarIdioma("es");
