@@ -56,12 +56,12 @@ const ES = {
   "resume.experience": "Experiencia",
 
   "edu.1.title": "Técnico Profesional en Programación Web",
-  "edu.1.text":  "[Una o dos frases sobre lo que estás aprendiendo y qué sabes hacer ahora.]",
+  "edu.1.text":   "Actualmente estudio Programación Web en UniEspinal. He practicado desarrollo web con HTML y PHP, y he utilizado Laravel para organizar rutas, controladores y vistas.",
   "edu.2.title": "[Curso o certificación]",
   "edu.2.text":  "[Qué aprendiste y para qué te sirve.]",
 
-  "exp.1.title": "[Rol o tipo de proyecto]",
-  "exp.1.text":  "[Qué hiciste, con qué herramientas y qué resultado tuvo.]",
+  "exp.1.title": "Proyecto académico: saludo y lista de libros",
+  "exp.1.text":   "He trabajado en una práctica de Laravel que muestra un saludo y una lista de libros. He utilizado rutas, un controlador y vistas Blade con PHP y HTML.",
   "exp.2.title": "[Rol o tipo de proyecto]",
   "exp.2.text":  "[Qué hiciste, con qué herramientas y qué resultado tuvo.]",
 
@@ -130,12 +130,12 @@ const EN = {
   "resume.experience": "Experience",
 
   "edu.1.title": "Professional Technician in Web Programming",
-  "edu.1.text":  "[One or two sentences about what you are learning and what you can do now.]",
+  "edu.1.text":  "I am currently studying Web Programming at UniEspinal. I have practiced web development with HTML and PHP, and I have used Laravel to organize routes, controllers, and views.",
   "edu.2.title": "[Course or certificate]",
   "edu.2.text":  "[What you learned and how you use it.]",
 
-  "exp.1.title": "[Role or type of project]",
-  "exp.1.text":  "[What you did, which tools you used, and what the result was.]",
+  "exp.1.title": "Academic project: Greeting and Book List",
+  "exp.1.text":  "I have worked on a Laravel practice project that displays a greeting and a list of books. I have used routes, a controller, and Blade views with PHP and HTML.",
   "exp.2.title": "[Role or type of project]",
   "exp.2.text":  "[What you did, which tools you used, and what the result was.]",
 
