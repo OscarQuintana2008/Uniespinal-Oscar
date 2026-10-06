@@ -1,124 +1,172 @@
 <!DOCTYPE html>
-<!--
-  ============================================================
-  WEB PROFILE TEMPLATE  ·  Técnico Profesional en Programación Web
-  Institución Universitaria de El Espinal - UniEspinal
-  Inglés I / Inglés II
-  ============================================================
-
-  HOW TO USE THIS FILE
-  1. Replace every text inside [square brackets] with your own information.
-  2. Every visible text has a data-i18n attribute. The actual words live in
-     script.js, inside the ES and EN dictionaries. Edit them there.
-  3. Do NOT delete the data-i18n attributes. They connect this file to the
-     language switcher.
-  4. Never add your home address, your phone number or your ID number.
-     A public profile does not need them.
-  ============================================================
--->
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- [Replace with your name] -->
-  <title>UniEspinal</title>
-  <meta name="description" content="[One short line about you. Example: Junior web developer and technical support technician based in Colombia.]">
+  <title>Oscar Julián Quintana Ramírez | Perfil web</title>
+  <meta name="description" content="Perfil de Oscar Julián Quintana Ramírez, estudiante de Programación Web en UniEspinal.">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .skill p {
+      color: var(--color-texto-suave);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .proyecto-texto {
+      padding: 26px;
+      border: 1px solid var(--color-acento);
+      min-height: 200px;
+    }
+
+    .proyecto-texto h3 {
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+
+    .proyecto-texto p {
+      color: var(--color-texto-suave);
+      line-height: 1.6;
+    }
+
+    .proyecto-texto .project-technologies {
+      color: var(--color-acento);
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 16px;
+      color: var(--color-acento);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    @media screen and (max-width: 480px) {
+      .contenedor-header header .logo a {
+        font-size: 22px;
+      }
+
+      .acciones-header {
+        gap: 8px;
+      }
+
+      .btn-idioma {
+        padding: 6px 8px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- ========================= HEADER ========================= -->
+  <!-- ENCABEZADO -->
   <div class="contenedor-header">
     <header>
       <div class="logo">
-        <!-- [Replace with your name or a short nickname] -->
         <a href="#inicio">JULIAN QUINTANA</a>
       </div>
 
       <nav id="nav">
         <ul>
-          <li><a href="#inicio"     data-i18n="nav.home"      onclick="cerrarMenu()">INICIO</a></li>
-          <li><a href="#sobremi"    data-i18n="nav.about"     onclick="cerrarMenu()">SOBRE MÍ</a></li>
-          <li><a href="#skills"     data-i18n="nav.skills"    onclick="cerrarMenu()">SKILLS</a></li>
-          <li><a href="#curriculum" data-i18n="nav.resume"    onclick="cerrarMenu()">FORMACIÓN</a></li>
-          <li><a href="#portfolio"  data-i18n="nav.portfolio" onclick="cerrarMenu()">PROYECTOS</a></li>
-          <li><a href="#contacto"   data-i18n="nav.contact"   onclick="cerrarMenu()">CONTACTO</a></li>
+          <li><a href="#inicio" data-i18n="nav.home" onclick="cerrarMenu()">INICIO</a></li>
+          <li><a href="#sobremi" data-i18n="nav.about" onclick="cerrarMenu()">SOBRE MÍ</a></li>
+          <li><a href="#skills" data-i18n="nav.skills" onclick="cerrarMenu()">HABILIDADES</a></li>
+          <li><a href="#curriculum" data-i18n="nav.resume" onclick="cerrarMenu()">FORMACIÓN</a></li>
+          <li><a href="#portfolio" data-i18n="nav.portfolio" onclick="cerrarMenu()">PROYECTOS</a></li>
+          <li><a href="#contacto" data-i18n="nav.contact" onclick="cerrarMenu()">CONTACTO</a></li>
         </ul>
       </nav>
 
       <div class="acciones-header">
-        <!-- LANGUAGE SWITCHER -->
-        <button id="btn-idioma"
-                class="btn-idioma"
-                type="button"
-                onclick="cambiarIdioma()"
-                aria-label="Switch to English">
-          <span class="idioma-activo">ES</span><span class="idioma-sep">/</span><span class="idioma-inactivo">EN</span>
+        <button
+          id="btn-idioma"
+          class="btn-idioma"
+          type="button"
+          onclick="cambiarIdioma()"
+          aria-label="Switch to English"
+        >
+          <span class="idioma-activo">ES</span>
+          <span class="idioma-sep">/</span>
+          <span class="idioma-inactivo">EN</span>
         </button>
 
-        <button class="nav-responsive" type="button" onclick="mostrarOcultarMenu()" aria-label="Menu">
+        <button
+          class="nav-responsive"
+          type="button"
+          onclick="mostrarOcultarMenu()"
+          aria-label="Menu"
+        >
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
     </header>
   </div>
 
-  <!-- ========================= HERO ========================= -->
+  <!-- INICIO -->
   <section id="inicio" class="inicio">
     <div class="contenido-banner">
       <div class="contenedor-img">
-        <!-- [Replace profile.jpg with your own photo. Square image works best.] -->
-        <img src="images/profile.jpg" alt="Profile photo" onerror="this.style.display='none'">
+        <img
+          src="images/profile.jpg"
+          alt="Oscar Julián Quintana Ramírez"
+          onerror="this.style.display='none'"
+        >
       </div>
 
-      <!-- [Replace with your full name] -->
       <h1>OSCAR JULIAN QUINTANA RAMIREZ</h1>
-      <h2 data-i18n="hero.role">Desarrollador Web · Soporte Técnico</h2>
+      <h2 data-i18n="hero.role">Estudiante de programación web</h2>
 
       <div class="redes">
-        <!-- [Replace the # with your real profile links. Delete the ones you do not use.] -->
-        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="mailto:quintanajulian29@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/OscarQuintana2008" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="mailto:quintanajulian29@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- ========================= ABOUT ========================= -->
+  <!-- SOBRE MÍ -->
   <section id="sobremi" class="sobremi">
     <div class="contenido-seccion">
       <h2 data-i18n="about.title">Sobre Mí</h2>
 
       <p data-i18n="about.text">
-        [Escribe aquí dos o tres frases sobre ti.]
+        Soy estudiante de programación web en UniEspinal.
+        Me gusta jugar voleibol e ir al gimnasio.
+        También disfruto aprender sobre programación y trabajar en proyectos web.
       </p>
 
       <div class="fila">
         <div class="col">
           <h3 data-i18n="about.infoTitle">Información</h3>
-          <!--
-            SAFE FIELDS ONLY.
-            Do not add: home address, phone number, ID number, date of birth..
-          -->
+
           <ul class="datos">
             <li>
               <strong data-i18n="about.labelLocation">Ubicación</strong>
-              <span data-i18n="about.valueLocation"> Girardot, Colombia </span>
+              <span data-i18n="about.valueLocation">Girardot, Colombia</span>
             </li>
+
             <li>
               <strong data-i18n="about.labelEmail">Correo</strong>
               <span>quintanajulian29@gmail.com</span>
             </li>
+
             <li>
               <strong data-i18n="about.labelLanguages">Idiomas</strong>
-              <span data-i18n="about.valueLanguages">Español (nativo) · Inglés (Intermedio)</span>
+              <span data-i18n="about.valueLanguages">Español (nativo) · Inglés en aprendizaje</span>
             </li>
+
             <li>
               <strong data-i18n="about.labelStatus">Disponibilidad</strong>
               <span class="destacado" data-i18n="about.valueStatus">Abierto a prácticas</span>
@@ -128,23 +176,26 @@
 
         <div class="col">
           <h3 data-i18n="about.interestsTitle">Intereses</h3>
+
           <div class="contenedor-intereses">
-            <!-- [Change icons and labels. Keep between 4 and 6.] -->
             <div class="interes">
               <i class="fa-solid fa-code"></i>
               <span data-i18n="interest.1">CÓDIGO</span>
             </div>
+
             <div class="interes">
-              <i class="fa-solid fa-headset"></i>
-              <span data-i18n="interest.2">SOPORTE</span>
+              <i class="fa-solid fa-volleyball"></i>
+              <span data-i18n="interest.2">VÓLEY</span>
             </div>
+
             <div class="interes">
-              <i class="fa-solid fa-book-open"></i>
-              <span data-i18n="interest.3">LECTURA</span>
+              <i class="fa-solid fa-dumbbell"></i>
+              <span data-i18n="interest.3">GIMNASIO</span>
             </div>
+
             <div class="interes">
-              <i class="fa-solid fa-gamepad"></i>
-              <span data-i18n="interest.4">JUEGOS</span>
+              <i class="fa-solid fa-lightbulb"></i>
+              <span data-i18n="interest.4">APRENDER</span>
             </div>
           </div>
         </div>
@@ -152,155 +203,235 @@
     </div>
   </section>
 
-  <!-- ========================= SKILLS ========================= -->
-  <!--
-    To change a skill: edit the label, and edit data-percent.
-    The bar width and the number are both taken from data-percent,
-    so you only change it in ONE place.
-  -->
- <section id="curriculum" class="curriculum">
-  <div class="contenido-seccion">
-    <h2 data-i18n="resume.title">Formación y experiencia</h2>
+  <!-- HABILIDADES -->
+  <section id="skills" class="skills">
+    <div class="contenido-seccion">
+      <h2 data-i18n="skills.title">Habilidades</h2>
 
-    <div class="fila">
-      <!-- FORMACIÓN: DOS CUADROS -->
-      <div class="col izquierda">
-        <h3 data-i18n="resume.education">Formación</h3>
+      <div class="fila">
+        <div class="col">
+          <h3 data-i18n="skills.technical">Habilidades técnicas</h3>
 
-        <div class="item izq">
-          <h4 data-i18n="edu.1.title">Técnico Profesional en Programación Web</h4>
-          <span class="casa">UniEspinal</span>
-          <span class="fecha" data-i18n="edu.1.date">2025 - 2027</span>
-          <p data-i18n="edu.1.text">
-            Estoy estudiando Programación Web en UniEspinal y estoy
-            aprendiendo a organizar y personalizar páginas web.
-          </p>
-          <div class="conectori"><div class="circuloi"></div></div>
+          <div class="skill">
+            <span class="skill-nombre">HTML &amp; CSS</span>
+            <p data-i18n="skill.html.text">
+              Estoy aprendiendo a editar el contenido y los estilos de páginas sencillas.
+            </p>
+          </div>
+
+          <div class="skill">
+            <span class="skill-nombre">JavaScript</span>
+            <p data-i18n="skill.js.text">
+              Estoy aprendiendo a entender y modificar ejemplos con ayuda.
+            </p>
+          </div>
+
+          <div class="skill">
+            <span class="skill-nombre">Python</span>
+            <p data-i18n="skill.python.text">
+              Estoy aprendiendo Python para trabajar en EduAlert.
+            </p>
+          </div>
+
+          <div class="skill">
+            <span class="skill-nombre">GitHub</span>
+            <p data-i18n="skill.github.text">
+              Estoy aprendiendo a guardar cambios y a publicar una página.
+            </p>
+          </div>
         </div>
 
-        <div class="item izq">
-          <h4 data-i18n="edu.2.title">Formación en Inglés</h4>
-          <span class="casa" data-i18n="edu.2.organization">Formación académica</span>
-          <span class="fecha" data-i18n="edu.2.date">Actualidad</span>
-          <p data-i18n="edu.2.text">
-            Actualmente curso Inglés II. Estoy aprendiendo vocabulario
-            técnico para describir mi formación, mis habilidades y mis proyectos.
-          </p>
-          <div class="conectori"><div class="circuloi"></div></div>
-        </div>
-      </div>
+        <div class="col">
+          <h3 data-i18n="skills.professional">Habilidades profesionales</h3>
 
-      <!-- EXPERIENCIA: DOS CUADROS -->
-      <div class="col derecha">
-        <h3 data-i18n="resume.experience">Experiencia</h3>
+          <div class="skill">
+            <span class="skill-nombre" data-i18n="skill.learning">Interés por aprender</span>
+            <p data-i18n="skill.learning.text">
+              Me gusta practicar programación y mejorar paso a paso.
+            </p>
+          </div>
 
-        <div class="item der">
-          <h4 data-i18n="exp.1.title">Programación Web</h4>
-          <span class="casa">UniEspinal</span>
-          <span class="fecha" data-i18n="exp.1.date">Actualidad</span>
-          <p data-i18n="exp.1.text">
-            He adaptado una plantilla académica para crear un perfil
-            web personal bilingüe con HTML, CSS y JavaScript.
-          </p>
-          <div class="conectord"><div class="circulod"></div></div>
-        </div>
+          <div class="skill">
+            <span class="skill-nombre" data-i18n="skill.problem">Resolución de problemas</span>
+            <p data-i18n="skill.problem.text">
+              Estoy aprendiendo a revisar errores y buscar soluciones.
+            </p>
+          </div>
 
-        <div class="item der">
-          <h4 data-i18n="exp.2.title">EduAlert: aplicación web con Python</h4>
-          <span class="casa" data-i18n="exp.2.organization">Proyecto académico</span>
-          <span class="fecha" data-i18n="exp.2.date">Actualidad</span>
-          <p data-i18n="exp.2.text">
-            Estoy trabajando en EduAlert, una aplicación web con Python.
-            Estoy aprendiendo a utilizar Python para este proyecto.
-          </p>
-          <div class="conectord"><div class="circulod"></div></div>
+          <div class="skill">
+            <span class="skill-nombre" data-i18n="skill.english">Inglés técnico</span>
+            <p data-i18n="skill.english.text">
+              Estoy aprendiendo vocabulario y frases para describir mi proyecto.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- ========================= RESUME ========================= -->
+  <!-- FORMACIÓN Y EXPERIENCIA -->
+  <section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+      <h2 data-i18n="resume.title">Formación y experiencia</h2>
 
-  <!-- ========================= PORTFOLIO ========================= -->
-  <!--
-    This is the most important section for a junior developer.
-    Three finished small projects are better than ten unfinished ones.
-    Every card should link to the live project or to its repository.
-  -->
+      <div class="fila">
+
+        <!-- DOS CUADROS DE FORMACIÓN -->
+        <div class="col izquierda">
+          <h3 data-i18n="resume.education">Formación</h3>
+
+          <div class="item izq">
+            <h4 data-i18n="edu.1.title">Técnico Profesional en Programación Web</h4>
+            <span class="casa">UniEspinal</span>
+            <span class="fecha" data-i18n="edu.1.date">2025 - 2027</span>
+
+            <p data-i18n="edu.1.text">
+              Estoy estudiando Programación Web en UniEspinal y estoy
+              aprendiendo a organizar y personalizar páginas web.
+            </p>
+
+            <div class="conectori">
+              <div class="circuloi"></div>
+            </div>
+          </div>
+
+          <div class="item izq">
+            <h4 data-i18n="edu.2.title">Formación en Inglés</h4>
+            <span class="casa" data-i18n="edu.2.organization">Formación académica</span>
+            <span class="fecha" data-i18n="edu.2.date">Actualidad</span>
+
+            <p data-i18n="edu.2.text">
+              Actualmente curso Inglés II. Estoy aprendiendo vocabulario
+              técnico para describir mi formación, mis habilidades y mis proyectos.
+            </p>
+
+            <div class="conectori">
+              <div class="circuloi"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DOS CUADROS DE EXPERIENCIA -->
+        <div class="col derecha">
+          <h3 data-i18n="resume.experience">Experiencia</h3>
+
+          <div class="item der">
+            <h4 data-i18n="exp.1.title">Programación Web</h4>
+            <span class="casa">UniEspinal</span>
+            <span class="fecha" data-i18n="exp.1.date">Actualidad</span>
+
+            <p data-i18n="exp.1.text">
+              He adaptado una plantilla académica para crear un perfil
+              web personal bilingüe con HTML, CSS y JavaScript.
+            </p>
+
+            <div class="conectord">
+              <div class="circulod"></div>
+            </div>
+          </div>
+
+          <div class="item der">
+            <h4 data-i18n="exp.2.title">EduAlert: aplicación web con Python</h4>
+            <span class="casa" data-i18n="exp.2.organization">Proyecto académico</span>
+            <span class="fecha" data-i18n="exp.2.date">Actualidad</span>
+
+            <p data-i18n="exp.2.text">
+              Estoy trabajando en EduAlert, una aplicación web con Python.
+              Estoy aprendiendo a utilizar Python para este proyecto.
+            </p>
+
+            <div class="conectord">
+              <div class="circulod"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
   <section id="portfolio" class="portfolio">
     <div class="contenido-seccion">
       <h2 data-i18n="portfolio.title">Proyectos</h2>
 
       <div class="galeria">
-        <a class="proyecto" href="#" target="_blank" rel="noopener">
-          <img src="images/project-1.png" alt="Project 1" onerror="this.style.opacity=0">
-          <div class="overlay">
-            <h3 data-i18n="project.1.title">[Nombre del proyecto]</h3>
-            <p data-i18n="project.1.text">[Tecnologías usadas]</p>
-          </div>
+        <article class="proyecto proyecto-texto">
+          <h3 data-i18n="project.1.title">EduAlert</h3>
+          <p class="project-technologies">Python</p>
+          <p data-i18n="project.1.text">Proyecto de aplicación web con Python.</p>
+          <p data-i18n="project.1.type">Aplicación web</p>
+        </article>
+
+        <a
+          class="proyecto proyecto-texto"
+          href="https://github.com/OscarQuintana2008/Uniespinal-Oscar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h3 data-i18n="project.2.title">Perfil web personal</h3>
+          <p class="project-technologies">HTML · CSS · JavaScript · GitHub Pages</p>
+
+          <p data-i18n="project.2.text">
+            Perfil académico en español e inglés, personalizado a partir
+            de una plantilla. Incluye presentación, habilidades, formación y proyectos.
+          </p>
+
+          <span class="project-link" data-i18n="project.code">Ver código en GitHub</span>
         </a>
 
-        <a class="proyecto" href="#" target="_blank" rel="noopener">
-          <img src="images/project-2.png" alt="Project 2" onerror="this.style.opacity=0">
-          <div class="overlay">
-            <h3 data-i18n="project.2.title">[Nombre del proyecto]</h3>
-            <p data-i18n="project.2.text">[Tecnologías usadas]</p>
-          </div>
-        </a>
-
-        <a class="proyecto" href="#" target="_blank" rel="noopener">
-          <img src="images/project-3.png" alt="Project 3" onerror="this.style.opacity=0">
-          <div class="overlay">
-            <h3 data-i18n="project.3.title">[Nombre del proyecto]</h3>
-            <p data-i18n="project.3.text">[Tecnologías usadas]</p>
-          </div>
+        <a
+          class="proyecto proyecto-texto"
+          href="https://github.com/OscarQuintana2008/MINI-PAGINA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h3 data-i18n="project.3.title">Práctica académica: saludo y lista de libros</h3>
+          <p class="project-technologies" data-i18n="project.3.text">PHP · Laravel · Blade · HTML</p>
+          <span class="project-link" data-i18n="project.code">Ver código en GitHub</span>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ========================= CONTACT ========================= -->
-  <!--
-    A contact form needs a server to work. This template uses direct links
-    instead, so nothing here is decorative: every button really does something.
-  -->
+  <!-- CONTACTO -->
   <section id="contacto" class="contacto">
     <div class="contenido-seccion">
       <h2 data-i18n="contact.title">Contacto</h2>
+
       <p class="contacto-intro" data-i18n="contact.intro">
-        [Una frase invitando a escribirte.]
+        Puedes escribirme por correo para conversar sobre programación y proyectos académicos.
       </p>
 
       <div class="tarjetas-contacto">
-        <a class="tarjeta" href="mailto:[your.email@example.com]">
+        <a class="tarjeta" href="mailto:quintanajulian29@gmail.com">
           <i class="fa-solid fa-envelope"></i>
           <strong data-i18n="contact.emailLabel">Correo</strong>
-          <span>quintanajulian@gmail.com</span>
+          <span>quintanajulian29@gmail.com</span>
         </a>
 
-        <a class="tarjeta" href="#" target="_blank" rel="noopener">
+        <a
+          class="tarjeta"
+          href="https://github.com/OscarQuintana2008"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i class="fa-brands fa-github"></i>
           <strong>GitHub</strong>
           <span>OscarQuintana2008</span>
         </a>
-
-        <a class="tarjeta" href="#" target="_blank" rel="noopener">
-          <i class="fa-brands fa-linkedin-in"></i>
-          <strong>LinkedIn</strong>
-          <span data-i18n="contact.linkedinValue">[Tu perfil profesional]</span>
-        </a>
       </div>
     </div>
   </section>
 
-  <!-- ========================= FOOTER ========================= -->
+  <!-- PIE DE PÁGINA -->
   <footer>
     <a href="#inicio" class="arriba" aria-label="Back to top">
       <i class="fa-solid fa-angles-up"></i>
     </a>
+
     <p class="footer-nota" data-i18n="footer.note">
-      [Tu nombre] · Técnico Profesional en Programación Web · UniEspinal
+      Oscar Julián Quintana Ramírez · Estudiante de Programación Web · UniEspinal
     </p>
   </footer>
 
