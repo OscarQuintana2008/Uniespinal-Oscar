@@ -1,10 +1,4 @@
-/* ============================================================
-   PERFIL WEB DE OSCAR JULIÁN QUINTANA RAMÍREZ
-   Textos en español e inglés
-   ============================================================ */
-
-/* ==================== ESPAÑOL ==================== */
-
+/* TEXTOS EN ESPAÑOL */
 const ES = {
   "nav.home": "INICIO",
   "nav.about": "SOBRE MÍ",
@@ -36,43 +30,38 @@ const ES = {
   "skills.technical": "Habilidades técnicas",
   "skills.professional": "Habilidades profesionales",
 
+  "skill.support": "Soporte al usuario",
+  "skill.web": "Programación Web",
+  "skill.teamwork": "Trabajo en equipo",
+  "skill.problem": "Resolución de problemas",
+  "skill.english": "Inglés técnico",
+
   "skill.html.text": "Estoy aprendiendo a editar el contenido y los estilos de páginas sencillas.",
   "skill.js.text": "Estoy aprendiendo a entender y modificar ejemplos con ayuda.",
   "skill.python.text": "Estoy aprendiendo Python para trabajar en EduAlert.",
   "skill.github.text": "Estoy aprendiendo a guardar cambios y a publicar una página.",
-
   "skill.learning": "Interés por aprender",
   "skill.learning.text": "Me gusta practicar programación y mejorar paso a paso.",
-  "skill.problem": "Resolución de problemas",
   "skill.problem.text": "Estoy aprendiendo a revisar errores y buscar soluciones.",
-  "skill.english": "Inglés técnico",
   "skill.english.text": "Estoy aprendiendo vocabulario y frases para describir mi proyecto.",
-
-  // Compatibilidad con las etiquetas de la plantilla anterior.
-  "skill.support": "Interés por aprender",
-  "skill.teamwork": "Práctica de programación",
 
   "resume.title": "Formación y experiencia",
   "resume.education": "Formación",
   "resume.experience": "Experiencia",
 
-  // Primer cuadro de Formación.
   "edu.1.title": "Técnico Profesional en Programación Web",
   "edu.1.date": "2025 - 2027",
   "edu.1.text": "Estoy estudiando Programación Web en UniEspinal y estoy aprendiendo a organizar y personalizar páginas web.",
 
-  // Segundo cuadro de Formación.
   "edu.2.title": "Formación en Inglés",
   "edu.2.organization": "Formación académica",
   "edu.2.date": "Actualidad",
   "edu.2.text": "Actualmente curso Inglés II. Estoy aprendiendo vocabulario técnico para describir mi formación, mis habilidades y mis proyectos.",
 
-  // Primer cuadro de Experiencia.
   "exp.1.title": "Programación Web",
   "exp.1.date": "Actualidad",
   "exp.1.text": "He adaptado una plantilla académica para crear un perfil web personal bilingüe con HTML, CSS y JavaScript.",
 
-  // Segundo cuadro de Experiencia.
   "exp.2.title": "EduAlert: aplicación web con Python",
   "exp.2.organization": "Proyecto académico",
   "exp.2.date": "Actualidad",
@@ -87,7 +76,6 @@ const ES = {
   "project.2.title": "Perfil web personal",
   "project.2.text": "Perfil académico en español e inglés, personalizado a partir de una plantilla. Incluye presentación, habilidades, formación y proyectos.",
 
-  // Estas claves se usan si conservas una tercera tarjeta.
   "project.3.title": "Práctica académica: saludo y lista de libros",
   "project.3.text": "PHP · Laravel · Blade · HTML",
 
@@ -101,8 +89,7 @@ const ES = {
   "footer.note": "Oscar Julián Quintana Ramírez · Estudiante de Programación Web · UniEspinal"
 };
 
-/* ==================== INGLÉS ==================== */
-
+/* TEXTOS EN INGLÉS */
 const EN = {
   "nav.home": "HOME",
   "nav.about": "ABOUT",
@@ -134,43 +121,38 @@ const EN = {
   "skills.technical": "Technical skills",
   "skills.professional": "Professional skills",
 
+  "skill.support": "User support",
+  "skill.web": "Web Programming",
+  "skill.teamwork": "Teamwork",
+  "skill.problem": "Problem solving",
+  "skill.english": "Technical English",
+
   "skill.html.text": "I am learning to edit the content and styles of simple web pages.",
   "skill.js.text": "I am learning to understand and modify examples with help.",
   "skill.python.text": "I am learning Python to work on EduAlert.",
   "skill.github.text": "I am learning to save changes and publish a web page.",
-
   "skill.learning": "Interest in learning",
   "skill.learning.text": "I enjoy practicing programming and improving step by step.",
-  "skill.problem": "Problem solving",
   "skill.problem.text": "I am learning to check errors and look for solutions.",
-  "skill.english": "Technical English",
   "skill.english.text": "I am learning vocabulary and sentences to describe my project.",
-
-  // Compatibilidad con las etiquetas de la plantilla anterior.
-  "skill.support": "Interest in learning",
-  "skill.teamwork": "Programming practice",
 
   "resume.title": "Education and experience",
   "resume.education": "Education",
   "resume.experience": "Experience",
 
-  // Primer cuadro de Formación.
   "edu.1.title": "Professional Technician in Web Programming",
   "edu.1.date": "2025 - 2027",
   "edu.1.text": "I am studying Web Programming at UniEspinal, and I am learning to organize and personalize web pages.",
 
-  // Segundo cuadro de Formación.
   "edu.2.title": "English Studies",
   "edu.2.organization": "Academic training",
   "edu.2.date": "Present",
   "edu.2.text": "I am taking English II. I am learning technical vocabulary to describe my education, skills, and projects.",
 
-  // Primer cuadro de Experiencia.
   "exp.1.title": "Web Programming",
   "exp.1.date": "Present",
   "exp.1.text": "I have adapted an academic template to create a bilingual personal web profile with HTML, CSS, and JavaScript.",
 
-  // Segundo cuadro de Experiencia.
   "exp.2.title": "EduAlert: Python Web Application",
   "exp.2.organization": "Academic project",
   "exp.2.date": "Present",
@@ -185,7 +167,6 @@ const EN = {
   "project.2.title": "Personal Web Profile",
   "project.2.text": "An academic profile in Spanish and English, personalized from a template. It includes an introduction, skills, education, and projects.",
 
-  // Estas claves se usan si conservas una tercera tarjeta.
   "project.3.title": "Academic practice: greeting and book list",
   "project.3.text": "PHP · Laravel · Blade · HTML",
 
@@ -199,8 +180,7 @@ const EN = {
   "footer.note": "Oscar Julián Quintana Ramírez · Web Programming Student · UniEspinal"
 };
 
-/* ==================== CAMBIO DE IDIOMA ==================== */
-
+/* CAMBIO DE IDIOMA */
 const DICCIONARIOS = {
   es: ES,
   en: EN
@@ -252,8 +232,7 @@ function cambiarIdioma() {
   aplicarIdioma(idiomaActual === "es" ? "en" : "es");
 }
 
-/* ==================== MENÚ PARA CELULAR ==================== */
-
+/* MENÚ PARA CELULAR */
 let menuVisible = false;
 
 function mostrarOcultarMenu() {
@@ -275,9 +254,7 @@ function cerrarMenu() {
   menuVisible = false;
 }
 
-/* ==================== BARRAS DE HABILIDADES ==================== */
-/* Se utiliza únicamente si el HTML todavía contiene barras. */
-
+/* ANIMACIÓN DE LAS BARRAS DE HABILIDADES */
 function animarHabilidades() {
   const barras = document.querySelectorAll(".progreso");
 
@@ -317,8 +294,7 @@ function animarHabilidades() {
   });
 }
 
-/* ==================== INICIO ==================== */
-
+/* INICIO */
 document.addEventListener("DOMContentLoaded", () => {
   aplicarIdioma("es");
   animarHabilidades();
